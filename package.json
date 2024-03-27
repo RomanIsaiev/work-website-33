@@ -10,5 +10,10 @@
   },
   "devDependencies": {
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "jquery": "^3.7.1",
+    "modern-normalize": "^2.0.0",
+    "siema": "^1.5.1"
   }
 }

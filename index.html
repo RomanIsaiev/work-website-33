@@ -4,6 +4,898 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SMM to Yourself</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header-background">
+        <div class="container">
+          <div class="start-container">
+            <div class="flex">
+              <p class="start-text">Старт 30.10</p>
+              <p class="start-text">Експрес-курс</p>
+            </div>
+          </div>
+          <h1 class="header-title">САМА СОБІ SMM</h1>
+          <p class="header-desc">
+            Навчіться створювати сучасний ТОПовий контент, на який будуть
+            рівнятись конкуренти, витрачаючи до 30 хвилин на день за допомогою
+            готових шаблонів та штучного інтелекту
+          </p>
+          <div class="button-container">
+            <a class="header-button link" href="#form">Приєднатись</a>
+            <div class="header-sale-mark">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/header-mark-1x.png 1x,
+                    ./src/images/header-mark-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="70"
+                  height="70" />
+                <img
+                  class="sale-mark"
+                  src="./src/images/header-mark-1x.png"
+                  alt="sale"
+                  width="70"
+                  height="70"
+              /></picture>
+              <p class="sale-number">-93%</p>
+            </div>
+          </div>
+          <div class="timer-container-one">
+            <p class="timer-text">Встигніть забрати знижку і всі бонуси</p>
+            <div id="countdown" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+              </div>
+            </div>
+          </div>
+          <div class="bonus-container">
+            <picture
+              ><source
+                srcset="
+                  ./src/images/gift-mobile-1x.png 1x,
+                  ./src/images/gift-mobile-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="60"
+                height="60" />
+              <img
+                class="gift"
+                src="./src/images/gift-mobile-1x.png"
+                alt="gift"
+                width="60"
+                height="60"
+            /></picture>
+            <p class="bonus-title">Бонуси</p>
+            <ul class="bonus-list">
+              <li class="list-item">
+                <span>Чек лист</span> "20 продаючих тригерів"
+              </li>
+              <li class="list-item">
+                <span>Чек лист</span> "5 формул рекламних текстів"
+              </li>
+              <li class="list-item">
+                <span>Безкоштовний додаток</span> з укр.субтитрами
+              </li>
+              <li class="list-item">
+                <span>Перелік незамінних</span> чат-ботів для блогу
+              </li>
+            </ul>
+          </div>
+          <div class="course-for-you">
+            <h2 class="for-you-title">Цей курс для вас, якщо:</h2>
+            <ul class="for-you-list list">
+              <li class="list-item">
+                вам не вистачає ідей і натхнення для того, щоб регулярно
+                створювати якісний, продаючий контент
+              </li>
+              <li class="decoration-line"></li>
+              <li class="list-item">
+                немає розуміння і досвіду, як робити швидко, легко та якісно
+              </li>
+              <li class="decoration-line"></li>
+              <li class="list-item">
+                не готові витрачати багато часу але розумієте, що без
+                нормального контенту купують гірше
+              </li>
+              <li class="decoration-line"></li>
+              <li class="list-item">
+                вже пробували співпрацювати з smm або таргетологами, але не
+                отримали очікуваного результату
+              </li>
+              <li class="decoration-line"></li>
+              <li class="list-item">
+                не готові комусь давати доступ до свого аккаунту, боїтесь
+                втратити
+              </li>
+              <li class="decoration-line"></li>
+              <li class="list-item">
+                не розумієте, як ввести сторінку так, щоб вона приносила
+                замовлення
+              </li>
+            </ul>
+            <p class="for-you-desc">
+              Курс підійде як для товарного бізнесу, так і для експертів та
+              майстрів з будь яких ніш, а також консультантів і новачків в сфері
+              smm
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="author">
+        <div class="container">
+          <div class="author-container">
+            <div class="title-container">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/fire-mobile-1x.png 1x,
+                    ./src/images/fire-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="32"
+                  height="32" />
+                <img
+                  class="fire-left image"
+                  src="./src/images/fire-mobile-1x.png"
+                  alt="fire"
+                  width="32"
+                  height="32"
+              /></picture>
+              <h2 class="author-title">автор курсу</h2>
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/fire-mobile-1x.png 1x,
+                    ./src/images/fire-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="32"
+                  height="32" />
+                <img
+                  class="fire-right image"
+                  src="./src/images/fire-mobile-1x.png"
+                  alt="fire"
+                  width="32"
+                  height="32"
+              /></picture>
+            </div>
+            <picture
+              ><source
+                srcset="
+                  ./src/images/author-mobile-1x.jpg 1x,
+                  ./src/images/author-mobile-2x.jpg 2x
+                "
+                media="(min-width: 320px)"
+                width="320"
+                height="320" />
+              <img
+                class="author-image image"
+                src="./src/images/author-mobile-1x.jpg"
+                alt="author"
+                width="320"
+                height="320"
+            /></picture>
+            <h3 class="author-name">Вікторія Стеблинець</h3>
+            <p class="auhtor-desc">
+              Більше 5 років займаюсь просуванням бізнесу та експертів
+            </p>
+            <ul class="author-list list">
+              <li class="list-item">
+                – Від створення сторінки до черги клієнтів в інстаграм
+              </li>
+              <li class="list-item">– Провела більше 300 консультацій</li>
+              <li class="list-item">
+                – Супроводжувала 80+ проектів з різних ніш
+              </li>
+              <li class="list-item">
+                – На постійній основі працюю з 15 експертами
+              </li>
+              <li class="list-item">
+                – Знаю всі механіки та секрети якими користуються професійні
+                маркетологи
+              </li>
+            </ul>
+          </div>
+          <div class="about-course">
+            <h3 class="about-course-title">про <span>курс</span></h3>
+            <ul class="about-course-list list">
+              <li class="list-item">
+                Курс - це моя авторська методика, яка показала себе найкращим
+                чином і вже ефективно працює в абсолютно різних нішах
+              </li>
+              <li class="list-item">
+                Ви отримаєте доступ до 4 модулів, по 5-7 прикладних, лаконічних
+                уроків в кожному. Тож, ви отримаєте лише суть та ефективні
+                інструменти, які зможете втілювати одразу. Що, в свою чергу,
+                дуже помітно збільшить активність на сторінці, довіру
+                потенційних клієнтів і кількість замовлень! 
+              </li>
+              <li class="list-item">
+                Також, я знаю як інколи втрачається мотивація або пропадає
+                настрій, тому бонусом дам посилання на мотивуючі медитації та
+                кіно для натхнення
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-question">
+        <div class="container">
+          <div class="faq">
+            <div class="question open isOpen">
+              <div class="question-name">
+                <p>Модуль 1. Налаштування сторінки </p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ol>
+                  <li>Функціонал ФБ+інстаграм</li>
+                  <li>Базові налаштування </li>
+                  <li>Шапка профілю - це ваша візитівка</li>
+                </ol>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>Модуль 2. Сервіси, шаблони</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ol>
+                  <li>АЗнайомство з Canva</li>
+                  <li>Підбір шаблонів та шрифтів</li>
+                  <li>Відео-інструкції з налаштуваннями </li>
+                  <li>
+                    Безкоштовні програми, сервіси і плей-лист музики, яку не
+                    блокують
+                  </li>
+                </ol>
+              </div>
+            </div>
+            <div class="question">
+              <div class="question-name">
+                <p>Модуль 3. Секрети маркетологів</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ol>
+                  <li>Фото і відео для якісного візуалу </li>
+                  <li>Красива стрічка - швидко і легко</li>
+                  <li>Автоматичний постинг в інстаграм</li>
+                  <li>Як полегшити роботу з допомогою штучного інтелекту</li>
+                  <li>Про # і геолокації</li>
+                  <li>Розширені налаштування </li>
+                  <li>Як отримувати заявки завдяки сторіс</li>
+                  <li>Візуал постів (фішки)</li>
+                </ol>
+              </div>
+            </div>
+            <div class="question last-question">
+              <div class="question-name">
+                <p>Модуль 4. Реклама </p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content">
+                <ol>
+                  <li>Як створити ефективний рекламний банер</li>
+                  <li>Продаючі рекламі тексти</li>
+                  <li>Як підібрати цільову, платіжоспроможну аудиторію </li>
+                  <li>Запуск реклами Facebook</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p class="question-desc">
+              Додатково ви отримаєте фільми для натхнення та медитації
+            </p>
+            <p class="price"><span>3950грн</span> &nbsp; 277грн</p>
+            <div class="button-container">
+              <a class="header-button link" href="#form">Приєднатись</a>
+              <div class="header-sale-mark">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/header-mark-1x.png 1x,
+                      ./src/images/header-mark-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="70"
+                    height="70" />
+                  <img
+                    class="sale-mark"
+                    src="./src/images/header-mark-1x.png"
+                    alt="sale"
+                    width="70"
+                    height="70"
+                /></picture>
+                <p class="sale-number">-93%</p>
+              </div>
+            </div>
+            <div>
+              <p class="timer-text black-text">
+                Встигніть забрати знижку і всі бонуси
+              </p>
+              <div id="countdown-two" class="countdown-two">
+                <div class="countdown-number-two">
+                  <span class="hours-two countdown-time-two"></span>
+                </div>
+                <div><span class="countdown-doubledot-two"></span></div>
+                <div class="countdown-number">
+                  <span class="minutes-two countdown-time-two"></span>
+                </div>
+                <div><span class="countdown-doubledot-two"></span></div>
+                <div class="countdown-number">
+                  <span class="seconds-two countdown-time-two"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-study">
+        <div class="about-study-background">
+          <div class="container">
+            <div class="wrapper-study-list">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/laptop-mobile-1x.png 1x,
+                    ./src/images/laptop-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="50"
+                  height="50" />
+                <img
+                  src="./src/images/laptop-mobile-1x.png"
+                  alt="laptop"
+                  width="50"
+                  height="50"
+                  class="wrapper-laptop"
+              /></picture>
+              <h3 class="study-title">Як відбувається <span>навчання</span></h3>
+              <ul class="study-list list">
+                <li class="list-item">
+                  <p class="item-number">1</p>
+                  <p class="item-text">
+                    Одразу після оплати ви отримаєте лист з доступом до
+                    матеріалів на пошту, яку вказали при оплаті
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="item-number">2</p>
+                  <p class="item-text">
+                    Доступ до матеріалів у вас буде на протязі 90 днів
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="item-number">3</p>
+                  <p class="item-text">
+                    Також, ви зможете додатись до чату в телеграм, де я буду
+                    відповідати на ваші питання і періодично проводити розбори
+                  </p>
+                </li>
+                <li class="list-item">
+                  <p class="item-number">4</p>
+                  <p class="item-text">
+                    Витрачати на навчання ви можете 15-20 хв
+                  </p>
+                </li>
+              </ul>
+              <p class="study-list-text">
+                <span>ВАЖЛИВО!</span> <br />
+                Вже з перших уроків ви будете отримувати інструменти,
+                впроваджуючи які одразу отримаєте збільшення активності і
+                запитів на послуги
+              </p>
+            </div>
+            <div class="study-results">
+              <h3 class="study-results-title">
+                Результати після <span>навчання</span>
+              </h3>
+              <ul class="study-results-list list">
+                <li class="list-item">
+                  Після завершення курсу у вас буде розуміння як працює
+                  інстаграм, його фішки та нові алгоритми
+                </li>
+                <li class="list-item">
+                  Ви навчитесь створювати сучасний, ефективний контент
+                </li>
+                <li class="list-item">
+                  Зможете завчасно створювати банк контенту за допомогою
+                  шаблонів та дуже простих додатків і значно економити свій час
+                </li>
+                <li class="list-item">
+                  Ви почнете бачити схвальні відгуки від підписників та колег і
+                  отримувати нові замовлення
+                </li>
+                <li class="list-item">
+                  А якщо пізніше захочете працювати з smm або таргетологами, вже
+                  будете розуміти, що і як делегувати, як ставити ТЗ
+                </li>
+              </ul>
+            </div>
+            <p class="results-desc">
+              Як результат - натхнення і енергії стане більше, а заявок і
+              продажів більше
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="form-section">
+        <div class="form-section-background">
+          <div class="container">
+            <p class="price"><span>3950грн</span> &nbsp; 277грн</p>
+            <ul class="price-list list">
+              <li class="list-item">
+                Введіть свої дані, натисніть "Купити курс" і система одразу
+                перенаправить Вас до оплати!
+              </li>
+              <li class="list-item">
+                Одразу після оплати Вам надійде доступ на пошту
+              </li>
+              <li class="list-item">
+                Перевіряйте, будь ласка, папки Спам і Промоакції
+              </li>
+            </ul>
+            <div class="form-container">
+              <div class="header-sale-mark">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/header-mark-1x.png 1x,
+                      ./src/images/header-mark-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="70"
+                    height="70" />
+                  <img
+                    class="sale-mark"
+                    src="./src/images/header-mark-1x.png"
+                    alt="sale"
+                    width="70"
+                    height="70"
+                /></picture>
+                <p class="sale-number">-93%</p>
+              </div>
+            </div>
+            <div>
+              <p class="timer-text black-text">
+                Встигніть забрати знижку і всі бонуси
+              </p>
+              <div id="countdown-three" class="countdown-three">
+                <div class="countdown-number-three">
+                  <span class="hours-three countdown-time-three"></span>
+                </div>
+                <div><span class="countdown-doubledot-three"></span></div>
+                <div class="countdown-number">
+                  <span class="minutes-three countdown-time-three"></span>
+                </div>
+                <div><span class="countdown-doubledot-three"></span></div>
+                <div class="countdown-number">
+                  <span class="seconds-three countdown-time-three"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bonus-container bonus-two">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/gift-mobile-1x.png 1x,
+                    ./src/images/gift-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="60"
+                  height="60" />
+                <img
+                  class="gift"
+                  src="./src/images/gift-mobile-1x.png"
+                  alt="gift"
+                  width="60"
+                  height="60"
+              /></picture>
+              <p class="bonus-title">Бонуси</p>
+              <ul class="bonus-list">
+                <li class="list-item">
+                  <span>Чек лист</span> "20 продаючих тригерів"
+                </li>
+                <li class="list-item">
+                  <span>Чек лист</span> "5 формул рекламних текстів"
+                </li>
+                <li class="list-item">
+                  <span>Безкоштовний додаток</span> з укр.субтитрами
+                </li>
+                <li class="list-item">
+                  <span>Перелік незамінних</span> чат-ботів для блогу
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews-and-questions">
+        <div class="background">
+          <div class="container">
+            <div class="reviews">
+              <h2 class="reviews-title">відгуки</h2>
+              <div class="siema">
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-01-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-01-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-01-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-02-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-02-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-02-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-03-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-03-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-03-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-04-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-04-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-04-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-05-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-05-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-05-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-06-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-06-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-06-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+                <picture>
+                  <source
+                    srcset="
+                      ./src/images/reviews/mobile-1x/mobile-07-1x.png 1x,
+                      ./src/images/reviews/mobile-2x/mobile-07-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="300"
+                    height="300" />
+                  <img
+                    class="siema-image"
+                    src="./src/images/reviews/mobile-1x/mobile-07-1x.png"
+                    alt="reviews"
+                    width="300"
+                    height="300"
+                /></picture>
+              </div>
+              <div class="siema-button-control">
+                <button class="prev">
+                  <img
+                    src="./src/images/siema-button-left.svg"
+                    alt="left"
+                    width="36"
+                    height="36"
+                  />
+                </button>
+                <button class="next">
+                  <img
+                    src="./src/images/siema-button-right.svg"
+                    alt="right"
+                    width="36"
+                    height="36"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="questions-two">
+              <h2 class="question-title">
+                Відповіді на<br />
+                <span>запитання</span>
+              </h2>
+              <div class="faq-two">
+                <div class="question-two open isOpen">
+                  <div class="question-two-name">
+                    <p>
+                      Скільки часу буде доступ до курсу?  Доступ до курсу
+                      надається на 90 днів
+                    </p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>Доступ до курсу надається на 90 днів</p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>Скільки часу мені знадобиться на проходження курсу? </p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Все індивідуально, уроки в легкому форматі до 15 хв та
+                      дуже змістовні без води та нудних текстів.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>
+                      Чи зможу я працювати СММ менеджером після проходження
+                      курсу?
+                    </p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Так, у вас буде вся необхідна інформація, для легкого
+                      старту у цій сфері
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>Чи буде сертифікат після проходження курсу?</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>Так, буде</p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>Якщо виникнуть питання, чи зможе хтось допомогти?</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      У вас буде доступ нашого телеграм чату, де зможете
+                      задавати питання та спілкуватись.
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>Як швидко я почну працювати зі своїм інстаграмом?</p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Ви можете з перших уроків вчитись і відпрацьовувати
+                      матеріал на своєму акаунті
+                    </p>
+                  </div>
+                </div>
+                <div class="question-two">
+                  <div class="question-two-name">
+                    <p>
+                      Чи обовʼязково писати пости, якщо я не вмію і не маю часу?
+                    </p>
+                    <img
+                      class="question-plus"
+                      src="./src/images/questions-plus.svg"
+                      alt="+"
+                      width="18"
+                      height="18"
+                    />
+                  </div>
+                  <div class="content-two">
+                    <p>
+                      Не хвилюйтесь, вся інформація буде в одному з уроків. І,
+                      так, вам не обов’язково бути копірайтером, щоб писати
+                      тексти
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-deals">
+          <ul class="deals-list list">
+            <li class="list-item">
+              <a class="link" target="_blank" rel="nofollow" href=""
+                >Договір оферта</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="link" target="_blank" rel="nofollow" href=""
+                >Політика конфіденційності</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="social-container">
+          <a
+            class="footer-insta link"
+            href="https://instagram.com/"
+            target="_blank"
+            rel="nofollow"
+          >
+            <img
+              src="./src/images/footer-insta.svg"
+              alt="insta"
+              width="24"
+              height="24"
+            />
+            <p>@vika_marketing</p>
+          </a>
+        </div>
+        <a class="footer-mail link" href="mailto:@gmail.com"
+          ><div class="footer-mail-container">
+            <p>mail@gmail.com</p>
+          </div></a
+        >
+        <a
+          class="disign-creator-link link"
+          href="https://www.instagram.com/lllckui"
+          target="_blank"
+          rel="nofollow"
+          ><div class="disign-creator">
+            <p class="create-by-text">Сайт розроблений</p>
+            <img
+              class="insta-icon"
+              src="./src/images/footer-insta.svg"
+              alt=""
+              width="14"
+              height="14"
+            />
+            <p class="create-by-text">@lllckui</p>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/scroll.js" type="module"></script>
+    <script src="./src/js/siema.min.js"></script>
+    <script src="./src/js/siema-swiper.js" type="module"></script>
+    <!-- <script type="module" src="./src/js/swiper.js"></script> -->
+  </body>
 </html>

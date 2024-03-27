@@ -620,7 +620,9 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-left: 30px;
+
+  padding: 0 0 0 30px;
+  margin: 0;
 }
 
 .content ol li {
@@ -648,6 +650,8 @@ p {
   font-weight: 600;
   line-height: 120%; /* 19.2px */
   text-transform: uppercase;
+
+  margin-bottom: 20px;
 }
 
 .question-plus {
@@ -1167,22 +1171,6 @@ p {
 }
 
 /* faq-02 */
-.faq-two::after {
-  content: '';
-  display: block;
-
-  width: 140px;
-  height: 1px;
-
-  margin: 60px auto 60px auto;
-
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    #fff 52.64%,
-    rgba(255, 255, 255, 0) 101.07%
-  );
-}
 
 .isOpen .content-two {
   display: block;

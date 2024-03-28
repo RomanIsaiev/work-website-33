@@ -1280,8 +1280,7 @@ p {
   gap: 12px;
 }
 
-.deals-list .list-item a {
-  display: block;
+.deals-list .list-item {
   color: #fff;
   text-align: center;
   font-family: 'Futura PT';

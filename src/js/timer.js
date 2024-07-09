@@ -1,5 +1,5 @@
 function getTimeRemaining(endtime) {
-  var t = Date.parse(endtime) - Date.parse(new Date());
+  var t = endtime - new Date().getTime();
   var seconds = Math.floor((t / 1000) % 60);
   var minutes = Math.floor((t / 1000 / 60) % 60);
   var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
@@ -11,17 +11,11 @@ function getTimeRemaining(endtime) {
   };
 }
 
-function initializeClock(
-  id,
-  endtime,
-  hoursSelector,
-  minutesSelector,
-  secondsSelector
-) {
+function initializeClock(id, endtime) {
   var clock = document.getElementById(id);
-  var hoursSpan = clock.querySelector(hoursSelector);
-  var minutesSpan = clock.querySelector(minutesSelector);
-  var secondsSpan = clock.querySelector(secondsSelector);
+  var hoursSpan = clock.querySelector('.hours');
+  var minutesSpan = clock.querySelector('.minutes');
+  var secondsSpan = clock.querySelector('.seconds');
 
   function updateClock() {
     var t = getTimeRemaining(endtime);
@@ -31,14 +25,7 @@ function initializeClock(
 
     if (t.total <= 0) {
       clearInterval(timeinterval);
-      var deadline = new Date(Date.parse(endtime) + 24 * 60 * 60 * 1000);
-      initializeClock(
-        id,
-        deadline,
-        hoursSelector,
-        minutesSelector,
-        secondsSelector
-      );
+      startNewDay();
     }
   }
 
@@ -46,19 +33,27 @@ function initializeClock(
   var timeinterval = setInterval(updateClock, 1000);
 }
 
-var deadline = 'September 31 2024 00:00:00 GMT+0200';
-initializeClock('countdown', deadline, '.hours', '.minutes', '.seconds');
-initializeClock(
-  'countdown-two',
-  deadline,
-  '.hours-two',
-  '.minutes-two',
-  '.seconds-two'
-);
-initializeClock(
-  'countdown-three',
-  deadline,
-  '.hours-three',
-  '.minutes-three',
-  '.seconds-three'
-);
+function getEndOfDay() {
+  var now = new Date();
+  var endOfDay = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1,
+    0,
+    0,
+    0
+  );
+  return endOfDay.getTime();
+}
+
+function startNewDay() {
+  var newDeadline = getEndOfDay();
+  initializeClock('countdown-one', newDeadline);
+  initializeClock('countdown-two', newDeadline);
+  initializeClock('countdown-three', newDeadline);
+}
+
+var deadline = getEndOfDay();
+initializeClock('countdown-one', deadline);
+initializeClock('countdown-two', deadline);
+initializeClock('countdown-three', deadline);

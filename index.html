@@ -50,10 +50,13 @@
                   id="monthElement"
                 ></span>
               </p>
-              <p class="start-text">Експрес-курс</p>
+              <!-- <p class="start-text">Експрес-курс</p> -->
             </div>
           </div>
           <h1 class="header-title">САМА СОБІ SMM</h1>
+          <p class="header-subtitle">
+            експрес курс з персональною стратегією від автора
+          </p>
           <p class="header-desc">
             Навчіться створювати сучасний ТОПовий контент, на який будуть
             рівнятись конкуренти, витрачаючи до 30 хвилин на день за допомогою
@@ -83,7 +86,7 @@
           </div>
           <div class="timer-container-one">
             <p class="timer-text">Встигніть забрати знижку і всі бонуси</p>
-            <div id="countdown" class="countdown">
+            <div id="countdown-one" class="countdown">
               <div class="countdown-number">
                 <span class="hours countdown-time"></span>
               </div>
@@ -128,8 +131,36 @@
               <li class="list-item">
                 <span>Перелік незамінних</span> чат-ботів для блогу
               </li>
+              <li class="list-item">
+                <span>Персональна стратегія</span> масштабування в Instagram
+              </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="personal-strategy">
+        <picture
+          ><source
+            srcset="
+              ./src/images/personal-image-1x.png 1x,
+              ./src/images/personal-image-2x.png 2x
+            "
+            media="(min-width: 320px)" />
+          <img
+            class="personal-image"
+            src="./src/images/personal-image-1x.png"
+            alt="author"
+        /></picture>
+        <div class="personal-wrapper">
+          <p class="personal-title">Персональна</p>
+          <p class="personal-subtitle">🔥масштабування в Instagram🔥</p>
+          <p class="personal-name">від Вікторії Стеблинець</p>
+        </div>
+      </section>
+      <section class="for-you">
+        <div class="container">
           <div class="course-for-you">
             <h2 class="for-you-title">Цей курс для вас, якщо:</h2>
             <ul class="for-you-list list">
@@ -169,9 +200,7 @@
             </p>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="author">
         <div class="container">
           <div class="author-container">
@@ -405,15 +434,15 @@
               </p>
               <div id="countdown-two" class="countdown-two">
                 <div class="countdown-number-two">
-                  <span class="hours-two countdown-time-two"></span>
+                  <span class="hours countdown-time-two"></span>
                 </div>
                 <div><span class="countdown-doubledot-two"></span></div>
                 <div class="countdown-number">
-                  <span class="minutes-two countdown-time-two"></span>
+                  <span class="minutes countdown-time-two"></span>
                 </div>
                 <div><span class="countdown-doubledot-two"></span></div>
                 <div class="countdown-number">
-                  <span class="seconds-two countdown-time-two"></span>
+                  <span class="seconds countdown-time-two"></span>
                 </div>
               </div>
             </div>
@@ -547,15 +576,15 @@
               </p>
               <div id="countdown-three" class="countdown-three">
                 <div class="countdown-number-three">
-                  <span class="hours-three countdown-time-three"></span>
+                  <span class="hours countdown-time-three"></span>
                 </div>
                 <div><span class="countdown-doubledot-three"></span></div>
                 <div class="countdown-number">
-                  <span class="minutes-three countdown-time-three"></span>
+                  <span class="minutes countdown-time-three"></span>
                 </div>
                 <div><span class="countdown-doubledot-three"></span></div>
                 <div class="countdown-number">
-                  <span class="seconds-three countdown-time-three"></span>
+                  <span class="seconds countdown-time-three"></span>
                 </div>
               </div>
             </div>
@@ -589,6 +618,9 @@
                 </li>
                 <li class="list-item">
                   <span>Перелік незамінних</span> чат-ботів для блогу
+                </li>
+                <li class="list-item">
+                  <span>Персональна стратегія</span> масштабування в Instagram
                 </li>
               </ul>
             </div>
@@ -919,11 +951,11 @@
     </footer>
     <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/siema.min.js"></script>
+    <script src="./src/js/siema-swiper.js" type="module"></script>
     <script src="./src/js/timer.js" type="module"></script>
     <script src="./src/js/changeDate.js" type="module"></script>
     <script src="./src/js/scroll.js" type="module"></script>
-    <script src="./src/js/siema.min.js"></script>
-    <script src="./src/js/siema-swiper.js" type="module"></script>
     <!-- <script type="module" src="./src/js/swiper.js"></script> -->
   </body>
 </html>

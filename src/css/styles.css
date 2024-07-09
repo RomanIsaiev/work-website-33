@@ -388,12 +388,14 @@ p {
 .personal-image {
   display: block;
   margin: 0 auto;
+
+  width: 100%;
 }
 
 .personal-wrapper {
   position: absolute;
   left: 50%;
-  bottom: 120px;
+  bottom: 50px;
 
   transform: translate(-50%);
 
